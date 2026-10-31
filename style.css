@@ -118,11 +118,17 @@ input.erro,textarea.erro{border-color:var(--erro)}
 
 /* ---------- Computador: a página ocupa a tela toda ---------- */
 @media (min-width:1024px){
-  body{padding:0}
-  .app{max-width:none;min-height:100vh;border:0;border-radius:0}
-  .tela--sobre.ativa{margin:0;max-width:none;border:0;border-radius:0}
-  .tela--sobre .tela-titulo{text-align:center;font-size:2.4rem;padding:.6rem 1.5rem}
-  .tela--sobre .tela-corpo{padding:2rem 3rem 3rem;font-size:1.2rem}
+  body{padding:.6rem}
+  .app{max-width:none;min-height:calc(100vh - 1.2rem)}
+
+  /* abas arredondadas, como no esboço */
+  .nav{align-self:center;align-items:center;gap:.5rem;padding:0 .8rem}
+  .aba{padding:.3rem 1.5rem;border:3px solid var(--tinta);border-radius:18px}
+
+  /* cartão "Quem somos?" cobre toda a largura, texto em uma coluna */
+  .tela--sobre.ativa{margin:1.25rem;max-width:none}
+  .tela--sobre .tela-titulo{text-align:center;font-size:2.2rem;padding:.5rem 1.5rem}
+  .tela--sobre .tela-corpo{padding:1.75rem 3rem 2.25rem;font-size:1.2rem}
   .tela--sobre .texto p{margin:0 0 1rem}
   .tela--contato.ativa{padding:2rem 3rem}
 }
