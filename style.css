@@ -32,7 +32,7 @@ h1,h2,.marca,.aba,label,.enviar,.chamada{font-family:"Patrick Hand","Nunito",san
 /* ---------- Estrutura (computador) ---------- */
 .app{position:relative;max-width:1200px;min-height:calc(100vh - 2rem);margin:0 auto;border:3px solid var(--tinta);border-radius:28px;background:var(--papel);overflow:hidden;
   display:grid;grid-template-columns:auto 1fr auto;grid-template-rows:auto 1fr}
-.linha{grid-row:1;grid-column:1/-1;border-bottom:3px solid var(--tinta);pointer-events:none}
+.linha{grid-row:1;grid-column:1/-1;border-bottom:3px solid var(--tinta);pointer-events:none;z-index:2}
 .logo{grid-row:1;grid-column:1;display:flex;align-items:center;justify-content:center;width:46px;height:46px;margin:.65rem;border:2px solid var(--tinta);border-radius:12px;background:var(--superficie);cursor:pointer;font:inherit;z-index:1}
 .logo svg{width:30px;height:30px;fill:var(--amarelo);stroke:var(--tinta);stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
 .logo path{fill:none}
